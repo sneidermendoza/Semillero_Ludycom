@@ -17,12 +17,13 @@ opcion = int(input("Por favor seleccione una opcion:\n-> 1-(Circulo)\n-> 2-(Tria
 while True:
     if opcion == 1:
         calcular_area_circulo()
-        break
-    elif opcion == 2:
+        pass
+    opcion = int(input("Por favor seleccione una opcion:\n-> 1-(Circulo)\n-> 2-(Triangulo)\n="))   
+    if opcion == 2:
         calcular_area_triangulo()
-        break
-
-    else:
+        pass
+    opcion = int(input("Por favor seleccione una opcion:\n-> 1-(Circulo)\n-> 2-(Triangulo)\n="))
+    if opcion != 1 and opcion != 2:
         print("~~Opcion invalida elige de nuevo~~")
         opcion = input("Por favor seleccione una opcion:\n-> 1-(Circulo)\n-> 2-(Triangulo)\n=")
 
