@@ -11,9 +11,8 @@ def factorial():
         return factorial()
     for i in range(1, numero + 1):
         resultado *= i
-
-    if resultado != 1:
-        print(resultado)
+ 
+    print(resultado)
     return factorial()
 
 factorial()
