@@ -1,23 +1,9 @@
-# v  = [1,2,3,4,5,6,7,8,9]
+"""
+Ejercicio para buscar el top.
+Recorrer un array unimodal y buscar cual es el top del mismo 
+"""
 
-# def par_impar(n):
-#     if n % 2 == 0:
-#         return True
-#     else:
-#         return False
-
-# def top(v):
-#     mitad = len(v) // 2
-#     if par_impar(mitad):
-#         mitad +1
-#     else:
-#         mitad
-
-#     medio = v[mitad]
-    
-
-# print(top(v))
-v=[9,18,7,6,8,30,24,]
+v=[1,2,4,4,5,6,4,3,2]
 def top(v,l,r):
     if l + 1 >= r: return max(v[l], v[r])
     else:
