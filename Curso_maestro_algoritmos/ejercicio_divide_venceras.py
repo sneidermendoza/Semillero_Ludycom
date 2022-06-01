@@ -1,14 +1,8 @@
-
-# def split_list(a_list):
-#     if len(a_list) != 1:
-#         half = len(a_list)//2
-#         sub_list1 = a_list[:half]
-#         sub_list2 = a_list[half:]
-#         b,c = split_list(sub_list1)
-#         return b, c
-#a = ['a','b','c','d','e','f','g','h']
-# B, C = split_list(A)
-# print(B,C)
+"""
+Ejercicio de ordenamiento.
+Algoritmo para ordenar un arreglo aplicando,
+divide y venceras con recursividad 
+"""
 
 def merge_sort(A,p,r):
     if p < r:
@@ -37,7 +31,6 @@ def merge(A,p,q,r):
             i += 1
 
         k += 1
-
 
 lista_A = [5,2,4,7,1,3,2,6]
 merge_sort(lista_A,0,7)
