@@ -1,3 +1,9 @@
+"""
+Algoritmo de ordenamiento rapido.
+estoy ordenando un array de numeros enteros 
+"""
+
+
 lista = [4,9,2,1,6,3,8]
 
 def quick_sort(l):
