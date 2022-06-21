@@ -37,6 +37,26 @@ Output
 Output
 54"""
 
+
+
+a = int(input("Ingrese el tiempo ->")) 
+b = int(input("Ingrese el tiempo ->"))
+c = int(input("Ingrese el tiempo ->"))
+cierto = True
+
+
+
 def time_lapse(time_1, time_2):
     if time_1 < time_2 : return time_2 - time_1
-    
+    else: return 60 - (time_1 -time_2)
+
+lapso = time_lapse(a,b)
+
+while c != -1 and cierto:
+    nuevo_lapso = time_lapse(b,c)
+    cierto = lapso == nuevo_lapso
+    b = c
+    c = int(input("Ingrese el tiempo ->"))
+
+if cierto: print(lapso)
+else: print(0)
